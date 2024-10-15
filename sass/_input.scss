@@ -1,0 +1,31 @@
+@use 'variables' as v;
+@use 'mixins';
+
+.input {
+    background-color: v.$Light-grayish-blue;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 0 15px;
+margin-bottom: 18px;
+    &__minus, &__plus {
+        @include mixins.signs-btn(12px, 15px); /* Usamos mixin para padding */
+        img {
+            width: 15px; 
+            height: 15px;
+        }
+    }
+
+    &__number {
+        width: 60px;
+        border: none;
+        background-color: transparent;
+        font-size: 1.2em;
+        font-weight: 700;
+        font-family: v.$Font;
+        text-align: center;
+        outline: none;
+    }
+}
