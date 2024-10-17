@@ -94,8 +94,11 @@ nextGalleryBtn.addEventListener("click", () => {
 const imagesModal = document.querySelector(".modal-gallery__background");
 const closeModalBtn = document.querySelector(".modal-gallery__close");
 
+// Mostrar el modal de imágenes solo si el ancho de la ventana es mayor a 1115px
 imageContainer.addEventListener("click", () => {
-  imagesModal.style.display = "grid";
+  if (window.innerWidth > 1115) {
+    imagesModal.style.display = "grid";
+  }
 });
 
 closeModalBtn.addEventListener("click", () => {

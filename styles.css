@@ -166,8 +166,8 @@ body {
   padding: 12px;
   border-radius: 50%;
   position: absolute;
-  top: 200px;
-  left: -10px;
+  top: 130px;
+  left: 15px;
 }
 .gallery__previous:hover {
   cursor: pointer;
@@ -189,7 +189,7 @@ body {
   padding: 12px;
   border-radius: 50%;
   position: absolute;
-  top: 200px;
+  top: 130px;
   left: 320px;
 }
 .gallery__next:hover {

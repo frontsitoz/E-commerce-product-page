@@ -10,20 +10,20 @@
         background-position-y: -35px;
         position: relative;
 @media(min-width:1115px){
-    cursor: pointer;
 
+    cursor: pointer;
 }
     }
 
 &__previous {
-@include mixins.image-btn(200px, -10px, false);
+@include mixins.image-btn(130px, 15px, false);
 @media (min-width:1115px){
 display: none;
 }
 }
 
 &__next {
-    @include mixins.image-btn(200px, 320px, false);
+    @include mixins.image-btn(130px, 320px, false);
     @media (min-width:1115px){
     display: none;
     }
