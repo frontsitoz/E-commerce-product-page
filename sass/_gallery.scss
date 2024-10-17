@@ -9,6 +9,10 @@
         background-size: cover;
         background-position-y: -35px;
         position: relative;
+@media(min-width:1115px){
+    cursor: pointer;
+
+}
     }
 
 &__previous {

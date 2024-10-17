@@ -116,6 +116,16 @@ body {
   width: 250px;
   padding: 28px 24px;
   height: 100vh;
+}
+.modal-navbar__background {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
   display: none;
 }
 .modal-navbar__items {
@@ -143,6 +153,11 @@ body {
   background-size: cover;
   background-position-y: -35px;
   position: relative;
+}
+@media (min-width: 1115px) {
+  .gallery__image-container {
+    cursor: pointer;
+  }
 }
 .gallery__previous {
   background-color: hsl(0, 0%, 100%);
@@ -422,6 +437,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1;
+  overflow: hidden;
   display: none;
   place-content: center;
 }
@@ -524,6 +540,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .attribution {
+    font-size: 13px;
+  }
+}
+
+.show {
+  display: block;
+}
+
+.cart-empty {
+  font-weight: 700;
+  color: hsla(0, 0%, 0%, 0.5);
+  text-align: center;
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */
